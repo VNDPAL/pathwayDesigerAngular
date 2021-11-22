@@ -1,0 +1,21 @@
+<div (dblclick)="editNode(node)" class="node" id="{{node.id}}" [style.top.px]="node.top || 0" [style.left.px]="node.left || 20">
+    <i (click)="removeNode(node)" class="material-icons close">clear</i>
+    {{node.name}}
+</div>
+
+<div *ngIf='isPopUp' class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-danger" id="exampleModalLabel">Edit Node</h5>
+        </div>
+        <div class="modal-body">
+            <input type='text' [(ngModel)]='nodeName' />
+        </div>
+        <div class="modal-footer">
+          <button type="button" (click)='onPopUpClose()' class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+          <button type="button" (click)='submitPopUp()' class="btn btn-warning" data-bs-dismiss="modal">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>

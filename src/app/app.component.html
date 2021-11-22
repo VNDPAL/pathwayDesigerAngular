@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="panel-one">
+    <button style="width: 120px;margin-right: 62px;background-color:#e2d6d6;cursor: pointer;" (click)="addNew()">Create new node</button>
+    <button style="width: 120px;background-color:#e2d6d6;cursor: pointer;" (click)="OpenPathway()">Open Pathway</button>
+    <nodes-container #nodeContainer [nodes]="nodes" [connections]="connections"></nodes-container>
+  </div>
+  <div class="vl"></div>
+  <div class="panel-two"></div>
+</div>
+
+
+<div *ngIf='isPopUp' class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger" id="exampleModalLabel">Edit Node</h5>
+      </div>
+      <div class="modal-body">
+        <select [(ngModel)]='pathwaySelected'>
+          <option *ngFor="let pw of pathways " value="volvo">{{pw.name}}</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" (click)='onPopUpClose()' class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+        <button type="button" (click)='submitPopUp()' class="btn btn-warning" data-bs-dismiss="modal">Open</button>
+      </div>
+    </div>
+  </div>
+</div>
