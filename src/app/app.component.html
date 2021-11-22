@@ -1,7 +1,9 @@
 <div class="container">
   <div class="panel-one">
-    <button style="width: 120px;margin-right: 62px;background-color:#e2d6d6;cursor: pointer;" (click)="addNew()">Create new node</button>
-    <button style="width: 120px;background-color:#e2d6d6;cursor: pointer;" (click)="OpenPathway()">Open Pathway</button>
+    <div class="btn-container">
+    <button class="pl-btn" (click)="addNew()">Create new node</button>
+    <button class="pl-btn" (click)="OpenPathway()">Open Pathway</button>
+    </div>  
     <nodes-container #nodeContainer [nodes]="nodes" [connections]="connections"></nodes-container>
   </div>
   <div class="vl"></div>
@@ -9,7 +11,7 @@
 </div>
 
 
-<div *ngIf='isPopUp' class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div *ngIf='isPopUp' class="modal fade show" style="display: block;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

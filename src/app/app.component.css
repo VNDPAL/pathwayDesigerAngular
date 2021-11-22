@@ -6,6 +6,8 @@ body {
 .container {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  max-width: 100%;
 }
 .panel-one {
   height: 100vh;
@@ -30,4 +32,18 @@ button {
 
 p {
   font-family: Lato;
+}
+
+.btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.btn-container button{
+  padding: 10px;
+  width: 140px;
+  line-height: 1;
+  border: 1px solid #b2b2b2;
 }
