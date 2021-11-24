@@ -9,7 +9,8 @@ TechStack: <br />
   
  Links and Docs: <br />
   -JsPlumb npm : https://www.npmjs.com/package/jsplumb <br />
-  -jsPlumb Community Version Documentation: https://docs.jsplumbtoolkit.com/community/
+  -jsPlumb Community Version Documentation: https://docs.jsplumbtoolkit.com/community/ <br />
+  -Demo : https://pathwaydesignerangular.herokuapp.com/
   
  Steps to Run this project:
   1.  Clone this project in your local.
