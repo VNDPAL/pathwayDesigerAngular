@@ -1,7 +1,7 @@
 # Flowchart Designer in Angular with jsPlumb
 
 TechStack: <br />
-  -Angular v13
+  -Angular v13 <br />
   -jsPlumb library
   
  Prerequisite: <br />
