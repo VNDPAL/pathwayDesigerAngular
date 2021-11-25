@@ -4,5 +4,11 @@
   }
   .buttonStyle{
     margin-left: 75px;
-    
+    margin-bottom: 100px;
+  }
+
+  .savepathway{
+    height: 45px;
+    cursor: pointer;
+    margin-bottom: 100px;
   }
