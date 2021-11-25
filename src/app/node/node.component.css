@@ -1,11 +1,20 @@
 .node 
 {position: absolute;
-  width: 150px;
-  height: 50px;
+  width: 160px;
+  height: 60px;
   padding: 4px;
-  box-shadow: 0 10px 40px 0 #B0C1D9;
+  /* box-shadow: 0 10px 40px 0; */
   text-align: center;
+  border-style: ridge;
+  font-size: large;
+  line-height: 40px;
   }
+
+  .node:hover {
+    border-color: black;
+    border-width: 2px;
+  }
+
 .close {
     font-size: 10px;
     position: absolute;
@@ -13,3 +22,11 @@
     top: 0px;
     cursor: pointer;
   }
+
+  .someClass {
+    background-color:white;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    z-index:10;
+}
